@@ -1,0 +1,2152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <open>true</open>
+    <styleUrl>Listenstil_Document</styleUrl>
+    <Style id="Listenstil_Document">
+      <ListStyle>
+        <ItemIcon>
+          <href>Icons/Infinity_16.png</href>
+        </ItemIcon>
+      </ListStyle>
+    </Style>
+    <Style id="Listenstil_FolderLibrary">
+      <ListStyle>
+        <ItemIcon>
+          <href>Icons/Folders_16.png</href>
+        </ItemIcon>
+      </ListStyle>
+    </Style>
+    <Style id="Listenstil_FolderSource">
+      <ListStyle>
+        <ItemIcon>
+          <href>Icons/Folders_16.png</href>
+        </ItemIcon>
+      </ListStyle>
+    </Style>
+    <Style id="Listenstil_FolderPoints">
+      <ListStyle>
+        <ItemIcon>
+          <href>Icons/Points_AllPoints_16.png</href>
+        </ItemIcon>
+      </ListStyle>
+    </Style>
+    <Style id="ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16">
+      <IconStyle>
+        <colorMode>normal</colorMode>
+        <scale>0.5</scale>
+        <Icon>
+          <href>Icons/Points_GNSSPhaseMeasuredRTK_16.png</href>
+        </Icon>
+      </IconStyle>
+      <BalloonStyle id="TechnicalPointBallonStyleId">
+        <bgColor>ffa2a2a2</bgColor>
+        <text><![CDATA[<head>
+	<style>
+		body {
+  background: #A2A2A2;
+  margin:5px auto;
+}
+
+table {
+  font-family: 'Sans serif';
+  font-size: 12px;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin:5px auto;
+  vertical-align: middle;
+}
+
+table tr th,
+table tr td {
+  background: #EAEAEA;
+  border-right: 1px solid #CECECE;
+  border-bottom: 1px solid #CECECE;
+  padding: 5px;
+}	
+
+table th {
+  text-align: left;
+  background: linear-gradient(#D9D9D9, #E7E7E7);  
+}
+
+td:first-child { width: 35%; }
+td:last-child {width: 65%; }
+
+table tr th:first-child,
+table tr td:first-child {
+  border-left: 1px solid #bbb;
+}
+table tr th {
+  border-top: 1px solid #bbb;
+}
+
+table tr:first-child th:first-child {
+  border-top-left-radius: 0px;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 0px;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 0px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 0px;
+}
+	</style>
+</head><body>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2"><img src="$[TechnicalPointType/ImageKey]" style="width:16;height:16;padding-left:10;padding-right:10;" />$[TechnicalPointType/Label]</th>
+			</tr>
+		</thead>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Objekt</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[TechnicalPointType/PointId/displayName]</td><td style="text-align:left;">$[TechnicalPointType/PointId]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/PointRole/displayName]</td><td style="text-align:left;">$[TechnicalPointType/PointRole]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/DateTime/displayName]</td><td style="text-align:right;">$[TechnicalPointType/DateTime]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/Layer/displayName]</td><td style="text-align:left;">$[TechnicalPointType/Layer]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Code</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[TechnicalPointType/Code/displayName]</td><td style="text-align:left;">$[TechnicalPointType/Code]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/CodeDescription/displayName]</td><td style="text-align:left;">$[TechnicalPointType/CodeDescription]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/CodeGroup/displayName]</td><td style="text-align:left;">$[TechnicalPointType/CodeGroup]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Lokale Position</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[TechnicalPointType/Easting/displayName]</td><td style="text-align:right;">$[TechnicalPointType/Easting]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/Northing/displayName]</td><td style="text-align:right;">$[TechnicalPointType/Northing]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/OrthometricHeight/displayName]</td><td style="text-align:right;">$[TechnicalPointType/OrthometricHeight]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/EllipsoidalHeight/displayName]</td><td style="text-align:right;">$[TechnicalPointType/EllipsoidalHeight]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/GeoidSeparation/displayName]</td><td style="text-align:right;">$[TechnicalPointType/GeoidSeparation]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Position WGS84</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[TechnicalPointType/WGS84Latitude/displayName]</td><td style="text-align:right;">$[TechnicalPointType/WGS84Latitude]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/WGS84Longitude/displayName]</td><td style="text-align:right;">$[TechnicalPointType/WGS84Longitude]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/WGS84Height/displayName]</td><td style="text-align:right;">$[TechnicalPointType/WGS84Height]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Qualität der lokalen Position</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[TechnicalPointType/SdEasting/displayName]</td><td style="text-align:right;">$[TechnicalPointType/SdEasting]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/SdNorthing/displayName]</td><td style="text-align:right;">$[TechnicalPointType/SdNorthing]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/SdHeight/displayName]</td><td style="text-align:right;">$[TechnicalPointType/SdHeight]</td>
+			</tr>
+		</tbody>
+	</table>
+</body>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="ProjectNavigatorTechnicalPointPointRoleGNSSSetupIcon16">
+      <IconStyle>
+        <colorMode>normal</colorMode>
+        <scale>0.5</scale>
+        <Icon>
+          <href>Icons/Points_StationGNSS_16.png</href>
+        </Icon>
+      </IconStyle>
+      <BalloonStyle id="TechnicalPointBallonStyleId">
+        <bgColor>ffa2a2a2</bgColor>
+        <text><![CDATA[<head>
+	<style>
+		body {
+  background: #A2A2A2;
+  margin:5px auto;
+}
+
+table {
+  font-family: 'Sans serif';
+  font-size: 12px;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin:5px auto;
+  vertical-align: middle;
+}
+
+table tr th,
+table tr td {
+  background: #EAEAEA;
+  border-right: 1px solid #CECECE;
+  border-bottom: 1px solid #CECECE;
+  padding: 5px;
+}	
+
+table th {
+  text-align: left;
+  background: linear-gradient(#D9D9D9, #E7E7E7);  
+}
+
+td:first-child { width: 35%; }
+td:last-child {width: 65%; }
+
+table tr th:first-child,
+table tr td:first-child {
+  border-left: 1px solid #bbb;
+}
+table tr th {
+  border-top: 1px solid #bbb;
+}
+
+table tr:first-child th:first-child {
+  border-top-left-radius: 0px;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 0px;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 0px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 0px;
+}
+	</style>
+</head><body>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2"><img src="$[TechnicalPointType/ImageKey]" style="width:16;height:16;padding-left:10;padding-right:10;" />$[TechnicalPointType/Label]</th>
+			</tr>
+		</thead>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Objekt</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[TechnicalPointType/PointId/displayName]</td><td style="text-align:left;">$[TechnicalPointType/PointId]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/PointRole/displayName]</td><td style="text-align:left;">$[TechnicalPointType/PointRole]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/DateTime/displayName]</td><td style="text-align:right;">$[TechnicalPointType/DateTime]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/Layer/displayName]</td><td style="text-align:left;">$[TechnicalPointType/Layer]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Code</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[TechnicalPointType/Code/displayName]</td><td style="text-align:left;">$[TechnicalPointType/Code]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/CodeDescription/displayName]</td><td style="text-align:left;">$[TechnicalPointType/CodeDescription]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/CodeGroup/displayName]</td><td style="text-align:left;">$[TechnicalPointType/CodeGroup]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Lokale Position</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[TechnicalPointType/Easting/displayName]</td><td style="text-align:right;">$[TechnicalPointType/Easting]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/Northing/displayName]</td><td style="text-align:right;">$[TechnicalPointType/Northing]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/OrthometricHeight/displayName]</td><td style="text-align:right;">$[TechnicalPointType/OrthometricHeight]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/EllipsoidalHeight/displayName]</td><td style="text-align:right;">$[TechnicalPointType/EllipsoidalHeight]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/GeoidSeparation/displayName]</td><td style="text-align:right;">$[TechnicalPointType/GeoidSeparation]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Position WGS84</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[TechnicalPointType/WGS84Latitude/displayName]</td><td style="text-align:right;">$[TechnicalPointType/WGS84Latitude]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/WGS84Longitude/displayName]</td><td style="text-align:right;">$[TechnicalPointType/WGS84Longitude]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/WGS84Height/displayName]</td><td style="text-align:right;">$[TechnicalPointType/WGS84Height]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Qualität der lokalen Position</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[TechnicalPointType/SdEasting/displayName]</td><td style="text-align:right;">$[TechnicalPointType/SdEasting]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/SdNorthing/displayName]</td><td style="text-align:right;">$[TechnicalPointType/SdNorthing]</td>
+			</tr><tr>
+				<td>$[TechnicalPointType/SdHeight/displayName]</td><td style="text-align:right;">$[TechnicalPointType/SdHeight]</td>
+			</tr>
+		</tbody>
+	</table>
+</body>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="Listenstil_GNSSProcessedBaselines">
+      <ListStyle>
+        <ItemIcon>
+          <href>Icons/Library_ProcessedBaselinesNode_16.png</href>
+        </ItemIcon>
+      </ListStyle>
+    </Style>
+    <Style id="Listenstil_ProjectNavigatorSetupIcon16">
+      <ListStyle>
+        <ItemIcon>
+          <href>Icons/Points_Station_16.png</href>
+        </ItemIcon>
+      </ListStyle>
+    </Style>
+    <Style id="Listenstil_ProjectNavigatorDataSourceDbxIcon16">
+      <ListStyle>
+        <ItemIcon>
+          <href>Icons/Source_DBX_16.png</href>
+        </ItemIcon>
+      </ListStyle>
+    </Style>
+    <Style id="ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16_4294967040">
+      <IconStyle>
+        <colorMode>normal</colorMode>
+        <scale>1</scale>
+        <Icon>
+          <href>Icons/Points_GNSSPhaseMeasuredRTK_16.png</href>
+        </Icon>
+      </IconStyle>
+      <LineStyle>
+        <color>ffffff00</color>
+        <colorMode>normal</colorMode>
+        <width>1</width>
+      </LineStyle>
+      <BalloonStyle id="GNSSBaselineBallonStyleId">
+        <bgColor>ffa2a2a2</bgColor>
+        <text><![CDATA[<head>
+	<style>
+		body {
+  background: #A2A2A2;
+  margin:5px auto;
+}
+
+table {
+  font-family: 'Sans serif';
+  font-size: 12px;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin:5px auto;
+  vertical-align: middle;
+}
+
+table tr th,
+table tr td {
+  background: #EAEAEA;
+  border-right: 1px solid #CECECE;
+  border-bottom: 1px solid #CECECE;
+  padding: 5px;
+}	
+
+table th {
+  text-align: left;
+  background: linear-gradient(#D9D9D9, #E7E7E7);  
+}
+
+td:first-child { width: 35%; }
+td:last-child {width: 65%; }
+
+table tr th:first-child,
+table tr td:first-child {
+  border-left: 1px solid #bbb;
+}
+table tr th {
+  border-top: 1px solid #bbb;
+}
+
+table tr:first-child th:first-child {
+  border-top-left-radius: 0px;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 0px;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 0px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 0px;
+}
+	</style>
+</head><body>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2"><img src="$[GNSSBaselineType/ImageKey]" style="width:16;height:16;padding-left:10;padding-right:10;" />$[GNSSBaselineType/Label]</th>
+			</tr>
+		</thead>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Punkt</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[GNSSBaselineType/PointId/displayName]</td><td style="text-align:left;">$[GNSSBaselineType/PointId]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/PointRole/displayName]</td><td style="text-align:left;">$[GNSSBaselineType/PointRole]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/DateTime/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/DateTime]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/Layer/displayName]</td><td style="text-align:left;">$[GNSSBaselineType/Layer]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Beobachtung</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[GNSSBaselineType/FromStationId/displayName]</td><td style="text-align:left;">$[GNSSBaselineType/FromStationId]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/DeltaX/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/DeltaX]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/DeltaY/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/DeltaY]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/DeltaZ/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/DeltaZ]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/SlopeDistance/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/SlopeDistance]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/AntennaHeight/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/AntennaHeight]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/GnssType/displayName]</td><td style="text-align:left;">$[GNSSBaselineType/GnssType]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Lokale Position</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[GNSSBaselineType/Easting/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/Easting]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/Northing/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/Northing]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/OrthometricHeight/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/OrthometricHeight]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/EllipsoidalHeight/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/EllipsoidalHeight]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/GeoidSeparation/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/GeoidSeparation]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Position WGS84</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[GNSSBaselineType/WGS84Latitude/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/WGS84Latitude]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/WGS84Longitude/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/WGS84Longitude]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/WGS84Height/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/WGS84Height]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Code</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[GNSSBaselineType/Code/displayName]</td><td style="text-align:left;">$[GNSSBaselineType/Code]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/CodeDescription/displayName]</td><td style="text-align:left;">$[GNSSBaselineType/CodeDescription]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/CodeGroup/displayName]</td><td style="text-align:left;">$[GNSSBaselineType/CodeGroup]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Beobachtungsqualität</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[GNSSBaselineType/SdX/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/SdX]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/SdY/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/SdY]</td>
+			</tr><tr>
+				<td>$[GNSSBaselineType/SdZ/displayName]</td><td style="text-align:right;">$[GNSSBaselineType/SdZ]</td>
+			</tr>
+		</tbody>
+	</table>
+</body>]]></text>
+      </BalloonStyle>
+      <ListStyle>
+        <ItemIcon>
+          <href>Icons/Points_GNSSPhaseMeasuredRTK_16.png</href>
+        </ItemIcon>
+      </ListStyle>
+    </Style>
+    <Schema id="TechnicalPointTypeId" name="TechnicalPointType">
+      <SimpleField type="string" name="Label" />
+      <SimpleField type="string" name="ImageKey" />
+      <SimpleField type="string" name="PointId">
+        <displayName>Punktnr.</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="PointRole">
+        <displayName>Punktklasse</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="DateTime">
+        <displayName>Datum/Uhrzeit</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Layer">
+        <displayName>Ebene</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Code">
+        <displayName>Code</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="CodeDescription">
+        <displayName>Codebeschreibung</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="CodeGroup">
+        <displayName>Codegruppe</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="Easting">
+        <displayName>Ost</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="Northing">
+        <displayName>Nord</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="OrthometricHeight">
+        <displayName>Ortho. Höhe</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="EllipsoidalHeight">
+        <displayName>Ellip. Höhe</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="GeoidSeparation">
+        <displayName>Geoidundulation</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="WGS84Latitude">
+        <displayName>Breite WGS84</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="WGS84Longitude">
+        <displayName>Länge WGS84</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="WGS84Height">
+        <displayName>WGS84 Ellip. Höhe</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="SdEasting">
+        <displayName>Stdabw. O</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="SdNorthing">
+        <displayName>Stdabw. N</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="SdHeight">
+        <displayName>Stdabw. Höhe</displayName>
+      </SimpleField>
+    </Schema>
+    <Schema id="GNSSInstrumentSetupTypeId" name="GNSSInstrumentSetupType">
+      <SimpleField type="string" name="Label" />
+      <SimpleField type="string" name="ImageKey" />
+      <SimpleField type="string" name="PositionSource">
+        <displayName>Herkunft Positionsangabe</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="PointRole">
+        <displayName>Punktklasse</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="DateTime">
+        <displayName>Datum/Uhrzeit</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="AntennaHeight">
+        <displayName>Antennenhöhe</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Color" />
+      <SimpleField type="string" name="ColorLabel">
+        <displayName>Farbe</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="Easting">
+        <displayName>Ost</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="Northing">
+        <displayName>Nord</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="OrthometricHeight">
+        <displayName>Ortho. Höhe</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="EllipsoidalHeight">
+        <displayName>Ellip. Höhe</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="GeoidSeparation">
+        <displayName>Geoidundulation</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="WGS84Latitude">
+        <displayName>Breite WGS84</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="WGS84Longitude">
+        <displayName>Länge WGS84</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="WGS84Height">
+        <displayName>WGS84 Ellip. Höhe</displayName>
+      </SimpleField>
+    </Schema>
+    <Schema id="DataSourceTypeId" name="DataSourceType">
+      <SimpleField type="string" name="Label" />
+      <SimpleField type="string" name="ImageKey" />
+      <SimpleField type="string" name="Imported">
+        <displayName>Importiert</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Creator">
+        <displayName>Erstellt von</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Format">
+        <displayName>Format</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Version">
+        <displayName>Version</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Name">
+        <displayName>Name</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Description">
+        <displayName>Beschreibung</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Location">
+        <displayName>Ort</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="CoordinateSystemName">
+        <displayName>Name</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Transformation">
+        <displayName>Transformation</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="TransformationType">
+        <displayName>Transformationstyp</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="ResidualDistribution">
+        <displayName>Verteilung der Residuen</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Ellipsoid">
+        <displayName>Ellipsoid</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Projection">
+        <displayName>Projektion</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="ProjectionType">
+        <displayName>Projektionstyp</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="GeoidModel">
+        <displayName>Geoidmodell</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="CscsModel">
+        <displayName>LSKS-Modell</displayName>
+      </SimpleField>
+    </Schema>
+    <Schema id="GNSSBaselineTypeId" name="GNSSBaselineType">
+      <SimpleField type="string" name="Label" />
+      <SimpleField type="string" name="ImageKey" />
+      <SimpleField type="string" name="PointId">
+        <displayName>Punktnr.</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="PointRole">
+        <displayName>Punktklasse</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="DateTime">
+        <displayName>Datum/Uhrzeit</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Layer">
+        <displayName>Ebene</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="FromStationId">
+        <displayName>Von Stationsnr.</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="DeltaX">
+        <displayName>Δx</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="DeltaY">
+        <displayName>Δy</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="DeltaZ">
+        <displayName>Δz</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="SlopeDistance">
+        <displayName>Schrägdist.</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="AntennaHeight">
+        <displayName>Antennenhöhe</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="GnssType">
+        <displayName>Satellitensystem</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="Easting">
+        <displayName>Ost</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="Northing">
+        <displayName>Nord</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="OrthometricHeight">
+        <displayName>Ortho. Höhe</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="EllipsoidalHeight">
+        <displayName>Ellip. Höhe</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="GeoidSeparation">
+        <displayName>Geoidundulation</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="WGS84Latitude">
+        <displayName>Breite WGS84</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="WGS84Longitude">
+        <displayName>Länge WGS84</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="WGS84Height">
+        <displayName>WGS84 Ellip. Höhe</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="SdX">
+        <displayName>Stdabw. X</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="SdY">
+        <displayName>Stdabw. Y</displayName>
+      </SimpleField>
+      <SimpleField type="double" name="SdZ">
+        <displayName>Stdabw. Z</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Code">
+        <displayName>Code</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="CodeDescription">
+        <displayName>Codebeschreibung</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="CodeGroup">
+        <displayName>Codegruppe</displayName>
+      </SimpleField>
+    </Schema>
+    <Folder id="FolderLibrary">
+      <name>Bibliothek</name>
+      <open>true</open>
+      <styleUrl>Listenstil_FolderLibrary</styleUrl>
+      <Folder id="FolderPoints">
+        <name>Punkte</name>
+        <styleUrl>Listenstil_FolderPoints</styleUrl>
+        <Placemark>
+          <name>GPS0001</name>
+          <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="TechnicalPointTypeId">
+              <SimpleData name="Label">GPS0001 ← RTCM-Ref 0014 (17.07.2018 11:41:34)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+              <SimpleData name="PointId">GPS0001</SimpleData>
+              <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 11:41:34</SimpleData>
+              <SimpleData name="Layer">Punkte</SimpleData>
+              <SimpleData name="Code">Kein Code</SimpleData>
+              <SimpleData name="CodeDescription">-</SimpleData>
+              <SimpleData name="CodeGroup">-</SimpleData>
+              <SimpleData name="Easting">32.392.269,5279 m</SimpleData>
+              <SimpleData name="Northing">5.289.596,7603 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">301,9861 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 45‘ 02,66‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 33‘ 45,72‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">301,9860 m</SimpleData>
+              <SimpleData name="SdNorthing">0,0103</SimpleData>
+              <SimpleData name="SdEasting">0,0093</SimpleData>
+              <SimpleData name="SdHeight">0,0254</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <MultiGeometry>
+            <Point>
+              <coordinates>7.5627003167038396,47.750738372709613,301.98600977379829</coordinates>
+            </Point>
+          </MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>GPS0002</name>
+          <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="TechnicalPointTypeId">
+              <SimpleData name="Label">GPS0002 ← RTCM-Ref 0014 (17.07.2018 11:41:39)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+              <SimpleData name="PointId">GPS0002</SimpleData>
+              <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 11:41:39</SimpleData>
+              <SimpleData name="Layer">Punkte</SimpleData>
+              <SimpleData name="Code">Kein Code</SimpleData>
+              <SimpleData name="CodeDescription">-</SimpleData>
+              <SimpleData name="CodeGroup">-</SimpleData>
+              <SimpleData name="Easting">32.392.269,9297 m</SimpleData>
+              <SimpleData name="Northing">5.289.598,5990 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">301,9676 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 45‘ 02,72‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 33‘ 45,74‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">301,9675 m</SimpleData>
+              <SimpleData name="SdNorthing">0,0100</SimpleData>
+              <SimpleData name="SdEasting">0,0091</SimpleData>
+              <SimpleData name="SdHeight">0,0273</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <MultiGeometry>
+            <Point>
+              <coordinates>7.5627052198223339,47.750754978567763,301.96746091824025</coordinates>
+            </Point>
+          </MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>GPS0003</name>
+          <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="TechnicalPointTypeId">
+              <SimpleData name="Label">GPS0003 ← RTCM-Ref 0014 (17.07.2018 11:41:45)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+              <SimpleData name="PointId">GPS0003</SimpleData>
+              <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 11:41:45</SimpleData>
+              <SimpleData name="Layer">Punkte</SimpleData>
+              <SimpleData name="Code">Kein Code</SimpleData>
+              <SimpleData name="CodeDescription">-</SimpleData>
+              <SimpleData name="CodeGroup">-</SimpleData>
+              <SimpleData name="Easting">32.392.270,3909 m</SimpleData>
+              <SimpleData name="Northing">5.289.600,7298 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">301,9830 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 45‘ 02,79‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 33‘ 45,76‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">301,9828 m</SimpleData>
+              <SimpleData name="SdNorthing">0,0099</SimpleData>
+              <SimpleData name="SdEasting">0,0090</SimpleData>
+              <SimpleData name="SdHeight">0,0270</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <MultiGeometry>
+            <Point>
+              <coordinates>7.562710843412737,47.750774221180684,301.98282036371529</coordinates>
+            </Point>
+          </MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>GPS0004</name>
+          <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="TechnicalPointTypeId">
+              <SimpleData name="Label">GPS0004 ← RTCM-Ref 0014 (17.07.2018 11:41:51)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+              <SimpleData name="PointId">GPS0004</SimpleData>
+              <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 11:41:51</SimpleData>
+              <SimpleData name="Layer">Punkte</SimpleData>
+              <SimpleData name="Code">Kein Code</SimpleData>
+              <SimpleData name="CodeDescription">-</SimpleData>
+              <SimpleData name="CodeGroup">-</SimpleData>
+              <SimpleData name="Easting">32.392.270,7482 m</SimpleData>
+              <SimpleData name="Northing">5.289.602,7259 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">302,0075 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 45‘ 02,85‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 33‘ 45,77‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">302,0074 m</SimpleData>
+              <SimpleData name="SdNorthing">0,0079</SimpleData>
+              <SimpleData name="SdEasting">0,0071</SimpleData>
+              <SimpleData name="SdHeight">0,0215</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <MultiGeometry>
+            <Point>
+              <coordinates>7.5627151138725024,47.750792236041256,302.00739271566272</coordinates>
+            </Point>
+          </MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>GPS0005</name>
+          <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="TechnicalPointTypeId">
+              <SimpleData name="Label">GPS0005 ← RTCM-Ref 0014 (17.07.2018 11:41:58)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+              <SimpleData name="PointId">GPS0005</SimpleData>
+              <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 11:41:58</SimpleData>
+              <SimpleData name="Layer">Punkte</SimpleData>
+              <SimpleData name="Code">Kein Code</SimpleData>
+              <SimpleData name="CodeDescription">-</SimpleData>
+              <SimpleData name="CodeGroup">-</SimpleData>
+              <SimpleData name="Easting">32.392.271,3034 m</SimpleData>
+              <SimpleData name="Northing">5.289.604,6567 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">301,9116 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 45‘ 02,91‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 33‘ 45,80‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">301,9115 m</SimpleData>
+              <SimpleData name="SdNorthing">0,0079</SimpleData>
+              <SimpleData name="SdEasting">0,0071</SimpleData>
+              <SimpleData name="SdHeight">0,0215</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <MultiGeometry>
+            <Point>
+              <coordinates>7.5627220405221927,47.750809695530606,301.91145539563149</coordinates>
+            </Point>
+          </MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>GPS0006</name>
+          <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="TechnicalPointTypeId">
+              <SimpleData name="Label">GPS0006 ← RTCM-Ref 0014 (17.07.2018 11:42:04)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+              <SimpleData name="PointId">GPS0006</SimpleData>
+              <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 11:42:04</SimpleData>
+              <SimpleData name="Layer">Punkte</SimpleData>
+              <SimpleData name="Code">Kein Code</SimpleData>
+              <SimpleData name="CodeDescription">-</SimpleData>
+              <SimpleData name="CodeGroup">-</SimpleData>
+              <SimpleData name="Easting">32.392.271,6740 m</SimpleData>
+              <SimpleData name="Northing">5.289.606,6961 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">301,9534 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 45‘ 02,98‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 33‘ 45,82‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">301,9533 m</SimpleData>
+              <SimpleData name="SdNorthing">0,0102</SimpleData>
+              <SimpleData name="SdEasting">0,0092</SimpleData>
+              <SimpleData name="SdHeight">0,0278</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <MultiGeometry>
+            <Point>
+              <coordinates>7.5627264784275958,47.750828101438266,301.95328742358834</coordinates>
+            </Point>
+          </MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>GPS0007</name>
+          <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="TechnicalPointTypeId">
+              <SimpleData name="Label">GPS0007 ← RTCM-Ref 0014 (17.07.2018 11:42:10)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+              <SimpleData name="PointId">GPS0007</SimpleData>
+              <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 11:42:10</SimpleData>
+              <SimpleData name="Layer">Punkte</SimpleData>
+              <SimpleData name="Code">Kein Code</SimpleData>
+              <SimpleData name="CodeDescription">-</SimpleData>
+              <SimpleData name="CodeGroup">-</SimpleData>
+              <SimpleData name="Easting">32.392.272,1383 m</SimpleData>
+              <SimpleData name="Northing">5.289.608,7418 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">301,9372 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 45‘ 03,05‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 33‘ 45,84‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">301,9371 m</SimpleData>
+              <SimpleData name="SdNorthing">0,0092</SimpleData>
+              <SimpleData name="SdEasting">0,0083</SimpleData>
+              <SimpleData name="SdHeight">0,0251</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <MultiGeometry>
+            <Point>
+              <coordinates>7.5627321643566026,47.750846579731693,301.93709739204496</coordinates>
+            </Point>
+          </MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>GPS0008</name>
+          <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="TechnicalPointTypeId">
+              <SimpleData name="Label">GPS0008 ← RTCM-Ref 0014 (17.07.2018 13:03:04)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+              <SimpleData name="PointId">GPS0008</SimpleData>
+              <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 13:03:04</SimpleData>
+              <SimpleData name="Layer">Punkte</SimpleData>
+              <SimpleData name="Code">Kein Code</SimpleData>
+              <SimpleData name="CodeDescription">-</SimpleData>
+              <SimpleData name="CodeGroup">-</SimpleData>
+              <SimpleData name="Easting">32.392.331,9198 m</SimpleData>
+              <SimpleData name="Northing">5.289.608,9816 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">318,2391 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 45‘ 03,09‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 33‘ 48,71‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">318,2390 m</SimpleData>
+              <SimpleData name="SdNorthing">0,0124</SimpleData>
+              <SimpleData name="SdEasting">0,0106</SimpleData>
+              <SimpleData name="SdHeight">0,0234</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <MultiGeometry>
+            <Point>
+              <coordinates>7.5635294302185025,47.750858720590436,318.23898407910019</coordinates>
+            </Point>
+          </MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>GPS0009</name>
+          <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="TechnicalPointTypeId">
+              <SimpleData name="Label">GPS0009 ← RTCM-Ref 0014 (17.07.2018 13:03:10)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+              <SimpleData name="PointId">GPS0009</SimpleData>
+              <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 13:03:10</SimpleData>
+              <SimpleData name="Layer">Punkte</SimpleData>
+              <SimpleData name="Code">Kein Code</SimpleData>
+              <SimpleData name="CodeDescription">-</SimpleData>
+              <SimpleData name="CodeGroup">-</SimpleData>
+              <SimpleData name="Easting">32.392.331,8609 m</SimpleData>
+              <SimpleData name="Northing">5.289.607,0323 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">318,4341 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 45‘ 03,03‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 33‘ 48,70‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">318,4340 m</SimpleData>
+              <SimpleData name="SdNorthing">0,0132</SimpleData>
+              <SimpleData name="SdEasting">0,0112</SimpleData>
+              <SimpleData name="SdHeight">0,0247</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <MultiGeometry>
+            <Point>
+              <coordinates>7.563529127904987,47.75084117748581,318.43396080285311</coordinates>
+            </Point>
+          </MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>GPS0010</name>
+          <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="TechnicalPointTypeId">
+              <SimpleData name="Label">GPS0010 ← RTCM-Ref 0014 (17.07.2018 13:03:20)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+              <SimpleData name="PointId">GPS0010</SimpleData>
+              <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 13:03:20</SimpleData>
+              <SimpleData name="Layer">Punkte</SimpleData>
+              <SimpleData name="Code">Kein Code</SimpleData>
+              <SimpleData name="CodeDescription">-</SimpleData>
+              <SimpleData name="CodeGroup">-</SimpleData>
+              <SimpleData name="Easting">32.392.331,8265 m</SimpleData>
+              <SimpleData name="Northing">5.289.605,1967 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">318,5084 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 45‘ 02,97‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 33‘ 48,70‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">318,5083 m</SimpleData>
+              <SimpleData name="SdNorthing">0,0088</SimpleData>
+              <SimpleData name="SdEasting">0,0076</SimpleData>
+              <SimpleData name="SdHeight">0,0165</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <MultiGeometry>
+            <Point>
+              <coordinates>7.5635291233526045,47.750824660731212,318.50830425973982</coordinates>
+            </Point>
+          </MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>GPS0011</name>
+          <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="TechnicalPointTypeId">
+              <SimpleData name="Label">GPS0011 ← RTCM-Ref 0014 (17.07.2018 13:03:26)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+              <SimpleData name="PointId">GPS0011</SimpleData>
+              <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 13:03:26</SimpleData>
+              <SimpleData name="Layer">Punkte</SimpleData>
+              <SimpleData name="Code">Kein Code</SimpleData>
+              <SimpleData name="CodeDescription">-</SimpleData>
+              <SimpleData name="CodeGroup">-</SimpleData>
+              <SimpleData name="Easting">32.392.331,8246 m</SimpleData>
+              <SimpleData name="Northing">5.289.603,0640 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">318,5059 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 45‘ 02,90‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 33‘ 48,71‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">318,5058 m</SimpleData>
+              <SimpleData name="SdNorthing">0,0148</SimpleData>
+              <SimpleData name="SdEasting">0,0129</SimpleData>
+              <SimpleData name="SdHeight">0,0276</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <MultiGeometry>
+            <Point>
+              <coordinates>7.5635296249347732,47.75080547714817,318.50576446019113</coordinates>
+            </Point>
+          </MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>GPS0012</name>
+          <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="TechnicalPointTypeId">
+              <SimpleData name="Label">GPS0012 ← RTCM-Ref 0014 (17.07.2018 13:03:32)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+              <SimpleData name="PointId">GPS0012</SimpleData>
+              <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 13:03:32</SimpleData>
+              <SimpleData name="Layer">Punkte</SimpleData>
+              <SimpleData name="Code">Kein Code</SimpleData>
+              <SimpleData name="CodeDescription">-</SimpleData>
+              <SimpleData name="CodeGroup">-</SimpleData>
+              <SimpleData name="Easting">32.392.331,7649 m</SimpleData>
+              <SimpleData name="Northing">5.289.601,1570 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">318,5527 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 45‘ 02,84‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 33‘ 48,71‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">318,5526 m</SimpleData>
+              <SimpleData name="SdNorthing">0,0145</SimpleData>
+              <SimpleData name="SdEasting">0,0123</SimpleData>
+              <SimpleData name="SdHeight">0,0269</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <MultiGeometry>
+            <Point>
+              <coordinates>7.5635293020197452,47.750788314084758,318.55257087852806</coordinates>
+            </Point>
+          </MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>GPS0013</name>
+          <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="TechnicalPointTypeId">
+              <SimpleData name="Label">GPS0013 ← RTCM-Ref 0014 (17.07.2018 13:03:39)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+              <SimpleData name="PointId">GPS0013</SimpleData>
+              <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 13:03:39</SimpleData>
+              <SimpleData name="Layer">Punkte</SimpleData>
+              <SimpleData name="Code">Kein Code</SimpleData>
+              <SimpleData name="CodeDescription">-</SimpleData>
+              <SimpleData name="CodeGroup">-</SimpleData>
+              <SimpleData name="Easting">32.392.331,6953 m</SimpleData>
+              <SimpleData name="Northing">5.289.599,1170 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">318,4973 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 45‘ 02,77‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 33‘ 48,70‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">318,4971 m</SimpleData>
+              <SimpleData name="SdNorthing">0,0114</SimpleData>
+              <SimpleData name="SdEasting">0,0097</SimpleData>
+              <SimpleData name="SdHeight">0,0211</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <MultiGeometry>
+            <Point>
+              <coordinates>7.5635288777984782,47.750769953468449,318.49711608607322</coordinates>
+            </Point>
+          </MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>GPS0014</name>
+          <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="TechnicalPointTypeId">
+              <SimpleData name="Label">GPS0014 ← RTCM-Ref 0014 (17.07.2018 13:03:53)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+              <SimpleData name="PointId">GPS0014</SimpleData>
+              <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 13:03:53</SimpleData>
+              <SimpleData name="Layer">Punkte</SimpleData>
+              <SimpleData name="Code">Kein Code</SimpleData>
+              <SimpleData name="CodeDescription">-</SimpleData>
+              <SimpleData name="CodeGroup">-</SimpleData>
+              <SimpleData name="Easting">32.392.331,7014 m</SimpleData>
+              <SimpleData name="Northing">5.289.597,1391 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">318,4747 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 45‘ 02,71‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 33‘ 48,71‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">318,4746 m</SimpleData>
+              <SimpleData name="SdNorthing">0,0125</SimpleData>
+              <SimpleData name="SdEasting">0,0108</SimpleData>
+              <SimpleData name="SdHeight">0,0233</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <MultiGeometry>
+            <Point>
+              <coordinates>7.5635294489606739,47.75075216332786,318.47457097843289</coordinates>
+            </Point>
+          </MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>RTCM-Ref 0014</name>
+          <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSSetupIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="TechnicalPointTypeId">
+              <SimpleData name="Label">RTCM-Ref 0014 (17.07.2018 11:41:27)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_StationGNSS_16.png</SimpleData>
+              <SimpleData name="PointId">RTCM-Ref 0014</SimpleData>
+              <SimpleData name="PointRole">Stationierung GNSS</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 11:41:27</SimpleData>
+              <SimpleData name="Layer">Punkte</SimpleData>
+              <SimpleData name="Code">Kein Code</SimpleData>
+              <SimpleData name="CodeDescription">-</SimpleData>
+              <SimpleData name="CodeGroup">-</SimpleData>
+              <SimpleData name="Easting">32.403.427,7167 m</SimpleData>
+              <SimpleData name="Northing">5.257.305,9140 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">555,1178 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 27‘ 43,32‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 43‘ 07,11‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">555,1177 m</SimpleData>
+              <SimpleData name="SdNorthing">-</SimpleData>
+              <SimpleData name="SdEasting">-</SimpleData>
+              <SimpleData name="SdHeight">-</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <MultiGeometry>
+            <Point>
+              <coordinates>7.71864272828872,47.462032374619625,555.11771376244724</coordinates>
+            </Point>
+          </MultiGeometry>
+        </Placemark>
+      </Folder>
+    </Folder>
+    <Folder id="FolderSource">
+      <name>Herkunft</name>
+      <open>true</open>
+      <styleUrl>Listenstil_FolderSource</styleUrl>
+      <Folder id="ProjectNavigatorDataSourceDbxIcon16">
+        <name>14_2</name>
+        <styleUrl>Listenstil_ProjectNavigatorDataSourceDbxIcon16</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="DataSourceTypeId">
+            <SimpleData name="Label">14_2</SimpleData>
+            <SimpleData name="ImageKey">Icons/Source_DBX_16.png</SimpleData>
+            <SimpleData name="Imported">24.07.2018 11:37:24</SimpleData>
+            <SimpleData name="Creator" />
+            <SimpleData name="Format">DBX</SimpleData>
+            <SimpleData name="Version">6.16 (0164)</SimpleData>
+            <SimpleData name="Name">14_2</SimpleData>
+            <SimpleData name="Description" />
+            <SimpleData name="Location">C:\Users\massi\Vineyard Cloud GmbH\Vineyard Cloud - Front Desk - Dokumente\Vineyard Cloud\Sales\Interessenten\Deutschland\Baden\Weingut Blankenhorn\DGPS\14_2_7473_0717_114125\14_2_7473_0717_114125.XCF</SimpleData>
+            <SimpleData name="CoordinateSystemName">DE-UTM32-NHN_41</SimpleData>
+            <SimpleData name="Transformation">DE-UTM32-NHN_41</SimpleData>
+            <SimpleData name="TransformationType">Klassisch 3D</SimpleData>
+            <SimpleData name="ResidualDistribution">Keine Auswahl</SimpleData>
+            <SimpleData name="Ellipsoid">DE-UTM32-NHN_41</SimpleData>
+            <SimpleData name="Projection">DE-UTM32-NHN_41</SimpleData>
+            <SimpleData name="ProjectionType">Transversale Mercator</SimpleData>
+            <SimpleData name="GeoidModel">Keine Auswahl</SimpleData>
+            <SimpleData name="CscsModel">Keine Auswahl</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Style>
+          <BalloonStyle id="DataSourceBallonStyleId">
+            <bgColor>ffa2a2a2</bgColor>
+            <text><![CDATA[<head>
+	<style>
+		body {
+  background: #A2A2A2;
+  margin:5px auto;
+}
+
+table {
+  font-family: 'Sans serif';
+  font-size: 12px;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin:5px auto;
+  vertical-align: middle;
+}
+
+table tr th,
+table tr td {
+  background: #EAEAEA;
+  border-right: 1px solid #CECECE;
+  border-bottom: 1px solid #CECECE;
+  padding: 5px;
+}	
+
+table th {
+  text-align: left;
+  background: linear-gradient(#D9D9D9, #E7E7E7);  
+}
+
+td:first-child { width: 35%; }
+td:last-child {width: 65%; }
+
+table tr th:first-child,
+table tr td:first-child {
+  border-left: 1px solid #bbb;
+}
+table tr th {
+  border-top: 1px solid #bbb;
+}
+
+table tr:first-child th:first-child {
+  border-top-left-radius: 0px;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 0px;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 0px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 0px;
+}.inlineBlock {
+      width: 50%;
+      display:inline-block;
+      float: right;
+      overflow: hidden;
+      vertical-align: middle;
+}
+	</style>
+</head><body>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2"><img src="$[DataSourceType/ImageKey]" style="width:16;height:16;padding-left:10;padding-right:10;" />$[DataSourceType/Label]</th>
+			</tr>
+		</thead>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Allgemein</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[DataSourceType/Imported/displayName]</td><td style="text-align:right;">$[DataSourceType/Imported]</td>
+			</tr><tr>
+				<td>$[DataSourceType/Creator/displayName]</td><td style="text-align:left;">$[DataSourceType/Creator]</td>
+			</tr><tr>
+				<td>$[DataSourceType/Format/displayName]</td><td style="text-align:left;">$[DataSourceType/Format]</td>
+			</tr><tr>
+				<td>$[DataSourceType/Version/displayName]</td><td style="text-align:left;">$[DataSourceType/Version]</td>
+			</tr><tr>
+				<td>$[DataSourceType/Name/displayName]</td><td style="text-align:left;">$[DataSourceType/Name]</td>
+			</tr><tr>
+				<td>$[DataSourceType/Description/displayName]</td><td style="text-align:left;">$[DataSourceType/Description]</td>
+			</tr><tr>
+				<td>$[DataSourceType/Location/displayName]</td><td style="text-align:left;">$[DataSourceType/Location]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Koordinatensystem</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[DataSourceType/CoordinateSystemName/displayName]</td><td style="text-align:left;">$[DataSourceType/CoordinateSystemName]</td>
+			</tr><tr>
+				<td>$[DataSourceType/Transformation/displayName]</td><td style="text-align:left;">$[DataSourceType/Transformation]</td>
+			</tr><tr>
+				<td>$[DataSourceType/TransformationType/displayName]</td><td style="text-align:left;">$[DataSourceType/TransformationType]</td>
+			</tr><tr>
+				<td>$[DataSourceType/ResidualDistribution/displayName]</td><td style="text-align:left;">$[DataSourceType/ResidualDistribution]</td>
+			</tr><tr>
+				<td>$[DataSourceType/Ellipsoid/displayName]</td><td style="text-align:left;">$[DataSourceType/Ellipsoid]</td>
+			</tr><tr>
+				<td>$[DataSourceType/Projection/displayName]</td><td style="text-align:left;">$[DataSourceType/Projection]</td>
+			</tr><tr>
+				<td>$[DataSourceType/ProjectionType/displayName]</td><td style="text-align:left;">$[DataSourceType/ProjectionType]</td>
+			</tr><tr>
+				<td>$[DataSourceType/GeoidModel/displayName]</td><td style="text-align:left;">$[DataSourceType/GeoidModel]</td>
+			</tr><tr>
+				<td>$[DataSourceType/CscsModel/displayName]</td><td style="text-align:left;">$[DataSourceType/CscsModel]</td>
+			</tr>
+		</tbody>
+	</table>
+</body>]]></text>
+          </BalloonStyle>
+        </Style>
+        <Folder id="ProjectNavigatorSetupIcon16">
+          <name>RTCM-Ref 0014</name>
+          <styleUrl>Listenstil_ProjectNavigatorSetupIcon16</styleUrl>
+          <ExtendedData>
+            <SchemaData schemaUrl="GNSSInstrumentSetupTypeId">
+              <SimpleData name="Label">RTCM-Ref 0014 (17.07.2018 11:41:27)</SimpleData>
+              <SimpleData name="ImageKey">Icons/Points_StationGNSS_16.png</SimpleData>
+              <SimpleData name="PositionSource">RTCM-Ref 0014</SimpleData>
+              <SimpleData name="PointRole">Stationierung GNSS</SimpleData>
+              <SimpleData name="DateTime">17.07.2018 11:41:27</SimpleData>
+              <SimpleData name="AntennaHeight">0,0000 m</SimpleData>
+              <SimpleData name="Color">#00FFFF</SimpleData>
+              <SimpleData name="ColorLabel">Nach Ebene</SimpleData>
+              <SimpleData name="Easting">32.403.427,7167 m</SimpleData>
+              <SimpleData name="Northing">5.257.305,9140 m</SimpleData>
+              <SimpleData name="OrthometricHeight">- m</SimpleData>
+              <SimpleData name="EllipsoidalHeight">555,1178 m</SimpleData>
+              <SimpleData name="GeoidSeparation">- m</SimpleData>
+              <SimpleData name="WGS84Latitude">47° 27‘ 43,32‘‘ N</SimpleData>
+              <SimpleData name="WGS84Longitude">7° 43‘ 07,11‘‘ O</SimpleData>
+              <SimpleData name="WGS84Height">555,1177 m</SimpleData>
+            </SchemaData>
+          </ExtendedData>
+          <Style>
+            <BalloonStyle id="GNSSInstrumentSetupBallonStyleId">
+              <bgColor>ffa2a2a2</bgColor>
+              <text><![CDATA[<head>
+	<style>
+		body {
+  background: #A2A2A2;
+  margin:5px auto;
+}
+
+table {
+  font-family: 'Sans serif';
+  font-size: 12px;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin:5px auto;
+  vertical-align: middle;
+}
+
+table tr th,
+table tr td {
+  background: #EAEAEA;
+  border-right: 1px solid #CECECE;
+  border-bottom: 1px solid #CECECE;
+  padding: 5px;
+}	
+
+table th {
+  text-align: left;
+  background: linear-gradient(#D9D9D9, #E7E7E7);  
+}
+
+td:first-child { width: 35%; }
+td:last-child {width: 65%; }
+
+table tr th:first-child,
+table tr td:first-child {
+  border-left: 1px solid #bbb;
+}
+table tr th {
+  border-top: 1px solid #bbb;
+}
+
+table tr:first-child th:first-child {
+  border-top-left-radius: 0px;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 0px;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 0px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 0px;
+}.inlineBlock {
+      width: 50%;
+      display:inline-block;
+      float: right;
+      overflow: hidden;
+      vertical-align: middle;
+}
+	</style>
+</head><body>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2"><img src="$[GNSSInstrumentSetupType/ImageKey]" style="width:16;height:16;padding-left:10;padding-right:10;" />$[GNSSInstrumentSetupType/Label]</th>
+			</tr>
+		</thead>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Station</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[GNSSInstrumentSetupType/PositionSource/displayName]</td><td style="text-align:left;">$[GNSSInstrumentSetupType/PositionSource]</td>
+			</tr><tr>
+				<td>$[GNSSInstrumentSetupType/PointRole/displayName]</td><td style="text-align:left;">$[GNSSInstrumentSetupType/PointRole]</td>
+			</tr><tr>
+				<td>$[GNSSInstrumentSetupType/DateTime/displayName]</td><td style="text-align:right;">$[GNSSInstrumentSetupType/DateTime]</td>
+			</tr><tr>
+				<td>$[GNSSInstrumentSetupType/AntennaHeight/displayName]</td><td style="text-align:right;">$[GNSSInstrumentSetupType/AntennaHeight]</td>
+			</tr><tr>
+				<td>$[GNSSInstrumentSetupType/ColorLabel/displayName]</td><td style="text-align:left;"><div class="inlineBlock" style="height:15px;background-color:$[GNSSInstrumentSetupType/Color];">
+
+				</div>$[GNSSInstrumentSetupType/ColorLabel]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Lokale Position</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[GNSSInstrumentSetupType/Easting/displayName]</td><td style="text-align:right;">$[GNSSInstrumentSetupType/Easting]</td>
+			</tr><tr>
+				<td>$[GNSSInstrumentSetupType/Northing/displayName]</td><td style="text-align:right;">$[GNSSInstrumentSetupType/Northing]</td>
+			</tr><tr>
+				<td>$[GNSSInstrumentSetupType/OrthometricHeight/displayName]</td><td style="text-align:right;">$[GNSSInstrumentSetupType/OrthometricHeight]</td>
+			</tr><tr>
+				<td>$[GNSSInstrumentSetupType/EllipsoidalHeight/displayName]</td><td style="text-align:right;">$[GNSSInstrumentSetupType/EllipsoidalHeight]</td>
+			</tr><tr>
+				<td>$[GNSSInstrumentSetupType/GeoidSeparation/displayName]</td><td style="text-align:right;">$[GNSSInstrumentSetupType/GeoidSeparation]</td>
+			</tr>
+		</tbody>
+	</table><table>
+		<thead>
+			<tr>
+				<th colspan="2">Position WGS84</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>$[GNSSInstrumentSetupType/WGS84Latitude/displayName]</td><td style="text-align:right;">$[GNSSInstrumentSetupType/WGS84Latitude]</td>
+			</tr><tr>
+				<td>$[GNSSInstrumentSetupType/WGS84Longitude/displayName]</td><td style="text-align:right;">$[GNSSInstrumentSetupType/WGS84Longitude]</td>
+			</tr><tr>
+				<td>$[GNSSInstrumentSetupType/WGS84Height/displayName]</td><td style="text-align:right;">$[GNSSInstrumentSetupType/WGS84Height]</td>
+			</tr>
+		</tbody>
+	</table>
+</body>]]></text>
+            </BalloonStyle>
+          </Style>
+          <Placemark>
+            <name>RTCM-Ref 0014 → GPS0001</name>
+            <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16_4294967040</styleUrl>
+            <ExtendedData>
+              <SchemaData schemaUrl="GNSSBaselineTypeId">
+                <SimpleData name="Label">RTCM-Ref 0014 → GPS0001</SimpleData>
+                <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+                <SimpleData name="PointId">GPS0001</SimpleData>
+                <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+                <SimpleData name="DateTime">17.07.2018 11:41:34</SimpleData>
+                <SimpleData name="Layer">GNSS-Beobachtungen</SimpleData>
+                <SimpleData name="FromStationId">RTCM-Ref 0014</SimpleData>
+                <SimpleData name="DeltaX">-22.107,2506 m</SimpleData>
+                <SimpleData name="DeltaY">-14.797,0044 m</SimpleData>
+                <SimpleData name="DeltaZ">21.456,3463 m</SimpleData>
+                <SimpleData name="SlopeDistance">34.176,8440 m</SimpleData>
+                <SimpleData name="AntennaHeight">2,0000 m</SimpleData>
+                <SimpleData name="GnssType">GPS/GLONASS</SimpleData>
+                <SimpleData name="Easting">32.392.269,5279 m</SimpleData>
+                <SimpleData name="Northing">5.289.596,7603 m</SimpleData>
+                <SimpleData name="OrthometricHeight">- m</SimpleData>
+                <SimpleData name="EllipsoidalHeight">301,9861 m</SimpleData>
+                <SimpleData name="GeoidSeparation">- m</SimpleData>
+                <SimpleData name="WGS84Latitude">47° 45‘ 02,66‘‘ N</SimpleData>
+                <SimpleData name="WGS84Longitude">7° 33‘ 45,72‘‘ O</SimpleData>
+                <SimpleData name="WGS84Height">301,9860 m</SimpleData>
+                <SimpleData name="SdX">0,0190</SimpleData>
+                <SimpleData name="SdY">0,0095</SimpleData>
+                <SimpleData name="SdZ">0,0197</SimpleData>
+                <SimpleData name="Code">Kein Code</SimpleData>
+                <SimpleData name="CodeDescription">-</SimpleData>
+                <SimpleData name="CodeGroup">-</SimpleData>
+              </SchemaData>
+            </ExtendedData>
+            <LineString id="RTCM-Ref 0014 → GPS0001">
+              <coordinates>7.71864272828872,47.462032374619625,555.11771376244724
+7.5627003167038396,47.750738372709613,301.98600977379829</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>RTCM-Ref 0014 → GPS0002</name>
+            <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16_4294967040</styleUrl>
+            <ExtendedData>
+              <SchemaData schemaUrl="GNSSBaselineTypeId">
+                <SimpleData name="Label">RTCM-Ref 0014 → GPS0002</SimpleData>
+                <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+                <SimpleData name="PointId">GPS0002</SimpleData>
+                <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+                <SimpleData name="DateTime">17.07.2018 11:41:39</SimpleData>
+                <SimpleData name="Layer">GNSS-Beobachtungen</SimpleData>
+                <SimpleData name="FromStationId">RTCM-Ref 0014</SimpleData>
+                <SimpleData name="DeltaX">-22.108,6662 m</SimpleData>
+                <SimpleData name="DeltaY">-14.796,8215 m</SimpleData>
+                <SimpleData name="DeltaZ">21.457,5740 m</SimpleData>
+                <SimpleData name="SlopeDistance">34.178,4513 m</SimpleData>
+                <SimpleData name="AntennaHeight">2,0000 m</SimpleData>
+                <SimpleData name="GnssType">GPS/GLONASS</SimpleData>
+                <SimpleData name="Easting">32.392.269,9297 m</SimpleData>
+                <SimpleData name="Northing">5.289.598,5990 m</SimpleData>
+                <SimpleData name="OrthometricHeight">- m</SimpleData>
+                <SimpleData name="EllipsoidalHeight">301,9676 m</SimpleData>
+                <SimpleData name="GeoidSeparation">- m</SimpleData>
+                <SimpleData name="WGS84Latitude">47° 45‘ 02,72‘‘ N</SimpleData>
+                <SimpleData name="WGS84Longitude">7° 33‘ 45,74‘‘ O</SimpleData>
+                <SimpleData name="WGS84Height">301,9675 m</SimpleData>
+                <SimpleData name="SdX">0,0214</SimpleData>
+                <SimpleData name="SdY">0,0089</SimpleData>
+                <SimpleData name="SdZ">0,0199</SimpleData>
+                <SimpleData name="Code">Kein Code</SimpleData>
+                <SimpleData name="CodeDescription">-</SimpleData>
+                <SimpleData name="CodeGroup">-</SimpleData>
+              </SchemaData>
+            </ExtendedData>
+            <LineString id="RTCM-Ref 0014 → GPS0002">
+              <coordinates>7.71864272828872,47.462032374619625,555.11771376244724
+7.5627052198223339,47.750754978567763,301.96746091824025</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>RTCM-Ref 0014 → GPS0003</name>
+            <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16_4294967040</styleUrl>
+            <ExtendedData>
+              <SchemaData schemaUrl="GNSSBaselineTypeId">
+                <SimpleData name="Label">RTCM-Ref 0014 → GPS0003</SimpleData>
+                <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+                <SimpleData name="PointId">GPS0003</SimpleData>
+                <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+                <SimpleData name="DateTime">17.07.2018 11:41:45</SimpleData>
+                <SimpleData name="Layer">GNSS-Beobachtungen</SimpleData>
+                <SimpleData name="FromStationId">RTCM-Ref 0014</SimpleData>
+                <SimpleData name="DeltaX">-22.110,2815 m</SimpleData>
+                <SimpleData name="DeltaY">-14.796,6105 m</SimpleData>
+                <SimpleData name="DeltaZ">21.459,0240 m</SimpleData>
+                <SimpleData name="SlopeDistance">34.180,3151 m</SimpleData>
+                <SimpleData name="AntennaHeight">2,0000 m</SimpleData>
+                <SimpleData name="GnssType">GPS/GLONASS</SimpleData>
+                <SimpleData name="Easting">32.392.270,3909 m</SimpleData>
+                <SimpleData name="Northing">5.289.600,7298 m</SimpleData>
+                <SimpleData name="OrthometricHeight">- m</SimpleData>
+                <SimpleData name="EllipsoidalHeight">301,9830 m</SimpleData>
+                <SimpleData name="GeoidSeparation">- m</SimpleData>
+                <SimpleData name="WGS84Latitude">47° 45‘ 02,79‘‘ N</SimpleData>
+                <SimpleData name="WGS84Longitude">7° 33‘ 45,76‘‘ O</SimpleData>
+                <SimpleData name="WGS84Height">301,9828 m</SimpleData>
+                <SimpleData name="SdX">0,0211</SimpleData>
+                <SimpleData name="SdY">0,0088</SimpleData>
+                <SimpleData name="SdZ">0,0197</SimpleData>
+                <SimpleData name="Code">Kein Code</SimpleData>
+                <SimpleData name="CodeDescription">-</SimpleData>
+                <SimpleData name="CodeGroup">-</SimpleData>
+              </SchemaData>
+            </ExtendedData>
+            <LineString id="RTCM-Ref 0014 → GPS0003">
+              <coordinates>7.71864272828872,47.462032374619625,555.11771376244724
+7.562710843412737,47.750774221180684,301.98282036371529</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>RTCM-Ref 0014 → GPS0004</name>
+            <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16_4294967040</styleUrl>
+            <ExtendedData>
+              <SchemaData schemaUrl="GNSSBaselineTypeId">
+                <SimpleData name="Label">RTCM-Ref 0014 → GPS0004</SimpleData>
+                <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+                <SimpleData name="PointId">GPS0004</SimpleData>
+                <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+                <SimpleData name="DateTime">17.07.2018 11:41:51</SimpleData>
+                <SimpleData name="Layer">GNSS-Beobachtungen</SimpleData>
+                <SimpleData name="FromStationId">RTCM-Ref 0014</SimpleData>
+                <SimpleData name="DeltaX">-22.111,7771 m</SimpleData>
+                <SimpleData name="DeltaY">-14.796,4861 m</SimpleData>
+                <SimpleData name="DeltaZ">21.460,3890 m</SimpleData>
+                <SimpleData name="SlopeDistance">34.182,0857 m</SimpleData>
+                <SimpleData name="AntennaHeight">2,0000 m</SimpleData>
+                <SimpleData name="GnssType">GPS/GLONASS</SimpleData>
+                <SimpleData name="Easting">32.392.270,7482 m</SimpleData>
+                <SimpleData name="Northing">5.289.602,7259 m</SimpleData>
+                <SimpleData name="OrthometricHeight">- m</SimpleData>
+                <SimpleData name="EllipsoidalHeight">302,0075 m</SimpleData>
+                <SimpleData name="GeoidSeparation">- m</SimpleData>
+                <SimpleData name="WGS84Latitude">47° 45‘ 02,85‘‘ N</SimpleData>
+                <SimpleData name="WGS84Longitude">7° 33‘ 45,77‘‘ O</SimpleData>
+                <SimpleData name="WGS84Height">302,0074 m</SimpleData>
+                <SimpleData name="SdX">0,0168</SimpleData>
+                <SimpleData name="SdY">0,0070</SimpleData>
+                <SimpleData name="SdZ">0,0156</SimpleData>
+                <SimpleData name="Code">Kein Code</SimpleData>
+                <SimpleData name="CodeDescription">-</SimpleData>
+                <SimpleData name="CodeGroup">-</SimpleData>
+              </SchemaData>
+            </ExtendedData>
+            <LineString id="RTCM-Ref 0014 → GPS0004">
+              <coordinates>7.71864272828872,47.462032374619625,555.11771376244724
+7.5627151138725024,47.750792236041256,302.00739271566272</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>RTCM-Ref 0014 → GPS0005</name>
+            <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16_4294967040</styleUrl>
+            <ExtendedData>
+              <SchemaData schemaUrl="GNSSBaselineTypeId">
+                <SimpleData name="Label">RTCM-Ref 0014 → GPS0005</SimpleData>
+                <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+                <SimpleData name="PointId">GPS0005</SimpleData>
+                <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+                <SimpleData name="DateTime">17.07.2018 11:41:58</SimpleData>
+                <SimpleData name="Layer">GNSS-Beobachtungen</SimpleData>
+                <SimpleData name="FromStationId">RTCM-Ref 0014</SimpleData>
+                <SimpleData name="DeltaX">-22.113,3340 m</SimpleData>
+                <SimpleData name="DeltaY">-14.796,1688 m</SimpleData>
+                <SimpleData name="DeltaZ">21.461,6232 m</SimpleData>
+                <SimpleData name="SlopeDistance">34.183,7303 m</SimpleData>
+                <SimpleData name="AntennaHeight">2,0000 m</SimpleData>
+                <SimpleData name="GnssType">GPS/GLONASS</SimpleData>
+                <SimpleData name="Easting">32.392.271,3034 m</SimpleData>
+                <SimpleData name="Northing">5.289.604,6567 m</SimpleData>
+                <SimpleData name="OrthometricHeight">- m</SimpleData>
+                <SimpleData name="EllipsoidalHeight">301,9116 m</SimpleData>
+                <SimpleData name="GeoidSeparation">- m</SimpleData>
+                <SimpleData name="WGS84Latitude">47° 45‘ 02,91‘‘ N</SimpleData>
+                <SimpleData name="WGS84Longitude">7° 33‘ 45,80‘‘ O</SimpleData>
+                <SimpleData name="WGS84Height">301,9115 m</SimpleData>
+                <SimpleData name="SdX">0,0168</SimpleData>
+                <SimpleData name="SdY">0,0070</SimpleData>
+                <SimpleData name="SdZ">0,0157</SimpleData>
+                <SimpleData name="Code">Kein Code</SimpleData>
+                <SimpleData name="CodeDescription">-</SimpleData>
+                <SimpleData name="CodeGroup">-</SimpleData>
+              </SchemaData>
+            </ExtendedData>
+            <LineString id="RTCM-Ref 0014 → GPS0005">
+              <coordinates>7.71864272828872,47.462032374619625,555.11771376244724
+7.5627220405221927,47.750809695530606,301.91145539563149</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>RTCM-Ref 0014 → GPS0006</name>
+            <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16_4294967040</styleUrl>
+            <ExtendedData>
+              <SchemaData schemaUrl="GNSSBaselineTypeId">
+                <SimpleData name="Label">RTCM-Ref 0014 → GPS0006</SimpleData>
+                <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+                <SimpleData name="PointId">GPS0006</SimpleData>
+                <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+                <SimpleData name="DateTime">17.07.2018 11:42:04</SimpleData>
+                <SimpleData name="Layer">GNSS-Beobachtungen</SimpleData>
+                <SimpleData name="FromStationId">RTCM-Ref 0014</SimpleData>
+                <SimpleData name="DeltaX">-22.114,8516 m</SimpleData>
+                <SimpleData name="DeltaY">-14.796,0346 m</SimpleData>
+                <SimpleData name="DeltaZ">21.463,0302 m</SimpleData>
+                <SimpleData name="SlopeDistance">34.185,5374 m</SimpleData>
+                <SimpleData name="AntennaHeight">2,0000 m</SimpleData>
+                <SimpleData name="GnssType">GPS/GLONASS</SimpleData>
+                <SimpleData name="Easting">32.392.271,6740 m</SimpleData>
+                <SimpleData name="Northing">5.289.606,6961 m</SimpleData>
+                <SimpleData name="OrthometricHeight">- m</SimpleData>
+                <SimpleData name="EllipsoidalHeight">301,9534 m</SimpleData>
+                <SimpleData name="GeoidSeparation">- m</SimpleData>
+                <SimpleData name="WGS84Latitude">47° 45‘ 02,98‘‘ N</SimpleData>
+                <SimpleData name="WGS84Longitude">7° 33‘ 45,82‘‘ O</SimpleData>
+                <SimpleData name="WGS84Height">301,9533 m</SimpleData>
+                <SimpleData name="SdX">0,0217</SimpleData>
+                <SimpleData name="SdY">0,0090</SimpleData>
+                <SimpleData name="SdZ">0,0202</SimpleData>
+                <SimpleData name="Code">Kein Code</SimpleData>
+                <SimpleData name="CodeDescription">-</SimpleData>
+                <SimpleData name="CodeGroup">-</SimpleData>
+              </SchemaData>
+            </ExtendedData>
+            <LineString id="RTCM-Ref 0014 → GPS0006">
+              <coordinates>7.71864272828872,47.462032374619625,555.11771376244724
+7.5627264784275958,47.750828101438266,301.95328742358834</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>RTCM-Ref 0014 → GPS0007</name>
+            <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16_4294967040</styleUrl>
+            <ExtendedData>
+              <SchemaData schemaUrl="GNSSBaselineTypeId">
+                <SimpleData name="Label">RTCM-Ref 0014 → GPS0007</SimpleData>
+                <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+                <SimpleData name="PointId">GPS0007</SimpleData>
+                <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+                <SimpleData name="DateTime">17.07.2018 11:42:10</SimpleData>
+                <SimpleData name="Layer">GNSS-Beobachtungen</SimpleData>
+                <SimpleData name="FromStationId">RTCM-Ref 0014</SimpleData>
+                <SimpleData name="DeltaX">-22.116,4262 m</SimpleData>
+                <SimpleData name="DeltaY">-14.795,8135 m</SimpleData>
+                <SimpleData name="DeltaZ">21.464,3996 m</SimpleData>
+                <SimpleData name="SlopeDistance">34.187,3201 m</SimpleData>
+                <SimpleData name="AntennaHeight">2,0000 m</SimpleData>
+                <SimpleData name="GnssType">GPS/GLONASS</SimpleData>
+                <SimpleData name="Easting">32.392.272,1383 m</SimpleData>
+                <SimpleData name="Northing">5.289.608,7418 m</SimpleData>
+                <SimpleData name="OrthometricHeight">- m</SimpleData>
+                <SimpleData name="EllipsoidalHeight">301,9372 m</SimpleData>
+                <SimpleData name="GeoidSeparation">- m</SimpleData>
+                <SimpleData name="WGS84Latitude">47° 45‘ 03,05‘‘ N</SimpleData>
+                <SimpleData name="WGS84Longitude">7° 33‘ 45,84‘‘ O</SimpleData>
+                <SimpleData name="WGS84Height">301,9371 m</SimpleData>
+                <SimpleData name="SdX">0,0196</SimpleData>
+                <SimpleData name="SdY">0,0082</SimpleData>
+                <SimpleData name="SdZ">0,0183</SimpleData>
+                <SimpleData name="Code">Kein Code</SimpleData>
+                <SimpleData name="CodeDescription">-</SimpleData>
+                <SimpleData name="CodeGroup">-</SimpleData>
+              </SchemaData>
+            </ExtendedData>
+            <LineString id="RTCM-Ref 0014 → GPS0007">
+              <coordinates>7.71864272828872,47.462032374619625,555.11771376244724
+7.5627321643566026,47.750846579731693,301.93709739204496</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>RTCM-Ref 0014 → GPS0008</name>
+            <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16_4294967040</styleUrl>
+            <ExtendedData>
+              <SchemaData schemaUrl="GNSSBaselineTypeId">
+                <SimpleData name="Label">RTCM-Ref 0014 → GPS0008</SimpleData>
+                <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+                <SimpleData name="PointId">GPS0008</SimpleData>
+                <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+                <SimpleData name="DateTime">17.07.2018 13:03:04</SimpleData>
+                <SimpleData name="Layer">GNSS-Beobachtungen</SimpleData>
+                <SimpleData name="FromStationId">RTCM-Ref 0014</SimpleData>
+                <SimpleData name="DeltaX">-22.114,4203 m</SimpleData>
+                <SimpleData name="DeltaY">-14.735,2375 m</SimpleData>
+                <SimpleData name="DeltaZ">21.477,3744 m</SimpleData>
+                <SimpleData name="SlopeDistance">34.168,0028 m</SimpleData>
+                <SimpleData name="AntennaHeight">2,0000 m</SimpleData>
+                <SimpleData name="GnssType">GPS/GLONASS</SimpleData>
+                <SimpleData name="Easting">32.392.331,9198 m</SimpleData>
+                <SimpleData name="Northing">5.289.608,9816 m</SimpleData>
+                <SimpleData name="OrthometricHeight">- m</SimpleData>
+                <SimpleData name="EllipsoidalHeight">318,2391 m</SimpleData>
+                <SimpleData name="GeoidSeparation">- m</SimpleData>
+                <SimpleData name="WGS84Latitude">47° 45‘ 03,09‘‘ N</SimpleData>
+                <SimpleData name="WGS84Longitude">7° 33‘ 48,71‘‘ O</SimpleData>
+                <SimpleData name="WGS84Height">318,2390 m</SimpleData>
+                <SimpleData name="SdX">0,0182</SimpleData>
+                <SimpleData name="SdY">0,0111</SimpleData>
+                <SimpleData name="SdZ">0,0189</SimpleData>
+                <SimpleData name="Code">Kein Code</SimpleData>
+                <SimpleData name="CodeDescription">-</SimpleData>
+                <SimpleData name="CodeGroup">-</SimpleData>
+              </SchemaData>
+            </ExtendedData>
+            <LineString id="RTCM-Ref 0014 → GPS0008">
+              <coordinates>7.71864272828872,47.462032374619625,555.11771376244724
+7.5635294302185025,47.750858720590436,318.23898407910019</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>RTCM-Ref 0014 → GPS0009</name>
+            <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16_4294967040</styleUrl>
+            <ExtendedData>
+              <SchemaData schemaUrl="GNSSBaselineTypeId">
+                <SimpleData name="Label">RTCM-Ref 0014 → GPS0009</SimpleData>
+                <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+                <SimpleData name="PointId">GPS0009</SimpleData>
+                <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+                <SimpleData name="DateTime">17.07.2018 13:03:10</SimpleData>
+                <SimpleData name="Layer">GNSS-Beobachtungen</SimpleData>
+                <SimpleData name="FromStationId">RTCM-Ref 0014</SimpleData>
+                <SimpleData name="DeltaX">-22.112,8560 m</SimpleData>
+                <SimpleData name="DeltaY">-14.735,0526 m</SimpleData>
+                <SimpleData name="DeltaZ">21.476,2072 m</SimpleData>
+                <SimpleData name="SlopeDistance">34.166,1770 m</SimpleData>
+                <SimpleData name="AntennaHeight">2,0000 m</SimpleData>
+                <SimpleData name="GnssType">GPS/GLONASS</SimpleData>
+                <SimpleData name="Easting">32.392.331,8609 m</SimpleData>
+                <SimpleData name="Northing">5.289.607,0323 m</SimpleData>
+                <SimpleData name="OrthometricHeight">- m</SimpleData>
+                <SimpleData name="EllipsoidalHeight">318,4341 m</SimpleData>
+                <SimpleData name="GeoidSeparation">- m</SimpleData>
+                <SimpleData name="WGS84Latitude">47° 45‘ 03,03‘‘ N</SimpleData>
+                <SimpleData name="WGS84Longitude">7° 33‘ 48,70‘‘ O</SimpleData>
+                <SimpleData name="WGS84Height">318,4340 m</SimpleData>
+                <SimpleData name="SdX">0,0193</SimpleData>
+                <SimpleData name="SdY">0,0118</SimpleData>
+                <SimpleData name="SdZ">0,0200</SimpleData>
+                <SimpleData name="Code">Kein Code</SimpleData>
+                <SimpleData name="CodeDescription">-</SimpleData>
+                <SimpleData name="CodeGroup">-</SimpleData>
+              </SchemaData>
+            </ExtendedData>
+            <LineString id="RTCM-Ref 0014 → GPS0009">
+              <coordinates>7.71864272828872,47.462032374619625,555.11771376244724
+7.563529127904987,47.75084117748581,318.43396080285311</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>RTCM-Ref 0014 → GPS0010</name>
+            <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16_4294967040</styleUrl>
+            <ExtendedData>
+              <SchemaData schemaUrl="GNSSBaselineTypeId">
+                <SimpleData name="Label">RTCM-Ref 0014 → GPS0010</SimpleData>
+                <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+                <SimpleData name="PointId">GPS0010</SimpleData>
+                <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+                <SimpleData name="DateTime">17.07.2018 13:03:20</SimpleData>
+                <SimpleData name="Layer">GNSS-Beobachtungen</SimpleData>
+                <SimpleData name="FromStationId">RTCM-Ref 0014</SimpleData>
+                <SimpleData name="DeltaX">-22.111,4588 m</SimpleData>
+                <SimpleData name="DeltaY">-14.734,8674 m</SimpleData>
+                <SimpleData name="DeltaZ">21.475,0275 m</SimpleData>
+                <SimpleData name="SlopeDistance">34.164,4513 m</SimpleData>
+                <SimpleData name="AntennaHeight">2,0000 m</SimpleData>
+                <SimpleData name="GnssType">GPS/GLONASS</SimpleData>
+                <SimpleData name="Easting">32.392.331,8265 m</SimpleData>
+                <SimpleData name="Northing">5.289.605,1967 m</SimpleData>
+                <SimpleData name="OrthometricHeight">- m</SimpleData>
+                <SimpleData name="EllipsoidalHeight">318,5084 m</SimpleData>
+                <SimpleData name="GeoidSeparation">- m</SimpleData>
+                <SimpleData name="WGS84Latitude">47° 45‘ 02,97‘‘ N</SimpleData>
+                <SimpleData name="WGS84Longitude">7° 33‘ 48,70‘‘ O</SimpleData>
+                <SimpleData name="WGS84Height">318,5083 m</SimpleData>
+                <SimpleData name="SdX">0,0131</SimpleData>
+                <SimpleData name="SdY">0,0081</SimpleData>
+                <SimpleData name="SdZ">0,0131</SimpleData>
+                <SimpleData name="Code">Kein Code</SimpleData>
+                <SimpleData name="CodeDescription">-</SimpleData>
+                <SimpleData name="CodeGroup">-</SimpleData>
+              </SchemaData>
+            </ExtendedData>
+            <LineString id="RTCM-Ref 0014 → GPS0010">
+              <coordinates>7.71864272828872,47.462032374619625,555.11771376244724
+7.5635291233526045,47.750824660731212,318.50830425973982</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>RTCM-Ref 0014 → GPS0011</name>
+            <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16_4294967040</styleUrl>
+            <ExtendedData>
+              <SchemaData schemaUrl="GNSSBaselineTypeId">
+                <SimpleData name="Label">RTCM-Ref 0014 → GPS0011</SimpleData>
+                <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+                <SimpleData name="PointId">GPS0011</SimpleData>
+                <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+                <SimpleData name="DateTime">17.07.2018 13:03:26</SimpleData>
+                <SimpleData name="Layer">GNSS-Beobachtungen</SimpleData>
+                <SimpleData name="FromStationId">RTCM-Ref 0014</SimpleData>
+                <SimpleData name="DeltaX">-22.109,9002 m</SimpleData>
+                <SimpleData name="DeltaY">-14.734,6226 m</SimpleData>
+                <SimpleData name="DeltaZ">21.473,5914 m</SimpleData>
+                <SimpleData name="SlopeDistance">34.162,4343 m</SimpleData>
+                <SimpleData name="AntennaHeight">2,0000 m</SimpleData>
+                <SimpleData name="GnssType">GPS/GLONASS</SimpleData>
+                <SimpleData name="Easting">32.392.331,8246 m</SimpleData>
+                <SimpleData name="Northing">5.289.603,0640 m</SimpleData>
+                <SimpleData name="OrthometricHeight">- m</SimpleData>
+                <SimpleData name="EllipsoidalHeight">318,5059 m</SimpleData>
+                <SimpleData name="GeoidSeparation">- m</SimpleData>
+                <SimpleData name="WGS84Latitude">47° 45‘ 02,90‘‘ N</SimpleData>
+                <SimpleData name="WGS84Longitude">7° 33‘ 48,71‘‘ O</SimpleData>
+                <SimpleData name="WGS84Height">318,5058 m</SimpleData>
+                <SimpleData name="SdX">0,0219</SimpleData>
+                <SimpleData name="SdY">0,0137</SimpleData>
+                <SimpleData name="SdZ">0,0219</SimpleData>
+                <SimpleData name="Code">Kein Code</SimpleData>
+                <SimpleData name="CodeDescription">-</SimpleData>
+                <SimpleData name="CodeGroup">-</SimpleData>
+              </SchemaData>
+            </ExtendedData>
+            <LineString id="RTCM-Ref 0014 → GPS0011">
+              <coordinates>7.71864272828872,47.462032374619625,555.11771376244724
+7.5635296249347732,47.75080547714817,318.50576446019113</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>RTCM-Ref 0014 → GPS0012</name>
+            <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16_4294967040</styleUrl>
+            <ExtendedData>
+              <SchemaData schemaUrl="GNSSBaselineTypeId">
+                <SimpleData name="Label">RTCM-Ref 0014 → GPS0012</SimpleData>
+                <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+                <SimpleData name="PointId">GPS0012</SimpleData>
+                <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+                <SimpleData name="DateTime">17.07.2018 13:03:32</SimpleData>
+                <SimpleData name="Layer">GNSS-Beobachtungen</SimpleData>
+                <SimpleData name="FromStationId">RTCM-Ref 0014</SimpleData>
+                <SimpleData name="DeltaX">-22.108,4655 m</SimpleData>
+                <SimpleData name="DeltaY">-14.734,4565 m</SimpleData>
+                <SimpleData name="DeltaZ">21.472,3429 m</SimpleData>
+                <SimpleData name="SlopeDistance">34.160,6494 m</SimpleData>
+                <SimpleData name="AntennaHeight">2,0000 m</SimpleData>
+                <SimpleData name="GnssType">GPS/GLONASS</SimpleData>
+                <SimpleData name="Easting">32.392.331,7649 m</SimpleData>
+                <SimpleData name="Northing">5.289.601,1570 m</SimpleData>
+                <SimpleData name="OrthometricHeight">- m</SimpleData>
+                <SimpleData name="EllipsoidalHeight">318,5527 m</SimpleData>
+                <SimpleData name="GeoidSeparation">- m</SimpleData>
+                <SimpleData name="WGS84Latitude">47° 45‘ 02,84‘‘ N</SimpleData>
+                <SimpleData name="WGS84Longitude">7° 33‘ 48,71‘‘ O</SimpleData>
+                <SimpleData name="WGS84Height">318,5526 m</SimpleData>
+                <SimpleData name="SdX">0,0212</SimpleData>
+                <SimpleData name="SdY">0,0130</SimpleData>
+                <SimpleData name="SdZ">0,0215</SimpleData>
+                <SimpleData name="Code">Kein Code</SimpleData>
+                <SimpleData name="CodeDescription">-</SimpleData>
+                <SimpleData name="CodeGroup">-</SimpleData>
+              </SchemaData>
+            </ExtendedData>
+            <LineString id="RTCM-Ref 0014 → GPS0012">
+              <coordinates>7.71864272828872,47.462032374619625,555.11771376244724
+7.5635293020197452,47.750788314084758,318.55257087852806</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>RTCM-Ref 0014 → GPS0013</name>
+            <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16_4294967040</styleUrl>
+            <ExtendedData>
+              <SchemaData schemaUrl="GNSSBaselineTypeId">
+                <SimpleData name="Label">RTCM-Ref 0014 → GPS0013</SimpleData>
+                <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+                <SimpleData name="PointId">GPS0013</SimpleData>
+                <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+                <SimpleData name="DateTime">17.07.2018 13:03:39</SimpleData>
+                <SimpleData name="Layer">GNSS-Beobachtungen</SimpleData>
+                <SimpleData name="FromStationId">RTCM-Ref 0014</SimpleData>
+                <SimpleData name="DeltaX">-22.107,0002 m</SimpleData>
+                <SimpleData name="DeltaY">-14.734,2940 m</SimpleData>
+                <SimpleData name="DeltaZ">21.470,9293 m</SimpleData>
+                <SimpleData name="SlopeDistance">34.158,7424 m</SimpleData>
+                <SimpleData name="AntennaHeight">2,0000 m</SimpleData>
+                <SimpleData name="GnssType">GPS/GLONASS</SimpleData>
+                <SimpleData name="Easting">32.392.331,6953 m</SimpleData>
+                <SimpleData name="Northing">5.289.599,1170 m</SimpleData>
+                <SimpleData name="OrthometricHeight">- m</SimpleData>
+                <SimpleData name="EllipsoidalHeight">318,4973 m</SimpleData>
+                <SimpleData name="GeoidSeparation">- m</SimpleData>
+                <SimpleData name="WGS84Latitude">47° 45‘ 02,77‘‘ N</SimpleData>
+                <SimpleData name="WGS84Longitude">7° 33‘ 48,70‘‘ O</SimpleData>
+                <SimpleData name="WGS84Height">318,4971 m</SimpleData>
+                <SimpleData name="SdX">0,0167</SimpleData>
+                <SimpleData name="SdY">0,0103</SimpleData>
+                <SimpleData name="SdZ">0,0168</SimpleData>
+                <SimpleData name="Code">Kein Code</SimpleData>
+                <SimpleData name="CodeDescription">-</SimpleData>
+                <SimpleData name="CodeGroup">-</SimpleData>
+              </SchemaData>
+            </ExtendedData>
+            <LineString id="RTCM-Ref 0014 → GPS0013">
+              <coordinates>7.71864272828872,47.462032374619625,555.11771376244724
+7.5635288777984782,47.750769953468449,318.49711608607322</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>RTCM-Ref 0014 → GPS0014</name>
+            <styleUrl>ProjectNavigatorTechnicalPointPointRoleGNSSPhaseMeasuredRTKIcon16_4294967040</styleUrl>
+            <ExtendedData>
+              <SchemaData schemaUrl="GNSSBaselineTypeId">
+                <SimpleData name="Label">RTCM-Ref 0014 → GPS0014</SimpleData>
+                <SimpleData name="ImageKey">Icons/Points_GNSSPhaseMeasuredRTK_16.png</SimpleData>
+                <SimpleData name="PointId">GPS0014</SimpleData>
+                <SimpleData name="PointRole">GNSS-Phase gemessen RTK</SimpleData>
+                <SimpleData name="DateTime">17.07.2018 13:03:53</SimpleData>
+                <SimpleData name="Layer">GNSS-Beobachtungen</SimpleData>
+                <SimpleData name="FromStationId">RTCM-Ref 0014</SimpleData>
+                <SimpleData name="DeltaX">-22.105,5694 m</SimpleData>
+                <SimpleData name="DeltaY">-14.734,0608 m</SimpleData>
+                <SimpleData name="DeltaZ">21.469,5826 m</SimpleData>
+                <SimpleData name="SlopeDistance">34.156,8693 m</SimpleData>
+                <SimpleData name="AntennaHeight">2,0000 m</SimpleData>
+                <SimpleData name="GnssType">GPS/GLONASS</SimpleData>
+                <SimpleData name="Easting">32.392.331,7014 m</SimpleData>
+                <SimpleData name="Northing">5.289.597,1391 m</SimpleData>
+                <SimpleData name="OrthometricHeight">- m</SimpleData>
+                <SimpleData name="EllipsoidalHeight">318,4747 m</SimpleData>
+                <SimpleData name="GeoidSeparation">- m</SimpleData>
+                <SimpleData name="WGS84Latitude">47° 45‘ 02,71‘‘ N</SimpleData>
+                <SimpleData name="WGS84Longitude">7° 33‘ 48,71‘‘ O</SimpleData>
+                <SimpleData name="WGS84Height">318,4746 m</SimpleData>
+                <SimpleData name="SdX">0,0185</SimpleData>
+                <SimpleData name="SdY">0,0114</SimpleData>
+                <SimpleData name="SdZ">0,0185</SimpleData>
+                <SimpleData name="Code">Kein Code</SimpleData>
+                <SimpleData name="CodeDescription">-</SimpleData>
+                <SimpleData name="CodeGroup">-</SimpleData>
+              </SchemaData>
+            </ExtendedData>
+            <LineString id="RTCM-Ref 0014 → GPS0014">
+              <coordinates>7.71864272828872,47.462032374619625,555.11771376244724
+7.5635294489606739,47.75075216332786,318.47457097843289</coordinates>
+            </LineString>
+          </Placemark>
+        </Folder>
+      </Folder>
+    </Folder>
+    <ScreenOverlay>
+      <styleUrl>Listenstil_Document</styleUrl>
+      <Icon>
+        <href>Icons/Infinity_Logo.png</href>
+      </Icon>
+      <overlayXY x="0" xunits="fraction" y="1" yunits="fraction" />
+      <screenXY x="0.01" xunits="fraction" y="0.98999999999999999" yunits="fraction" />
+      <rotationXY x="0" xunits="fraction" y="0" yunits="fraction" />
+      <size x="300" xunits="pixels" y="50" yunits="pixels" />
+    </ScreenOverlay>
+  </Document>
+</kml>
